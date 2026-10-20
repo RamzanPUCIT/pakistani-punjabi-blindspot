@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="t d">
+  <title id="t">Blind Spot: Everyday Pakistani Punjabi Words</title>
+  <desc id="d">google/gemma-4-E2B-it scored 73.75% on Urdu words but only 18.75% on the same words in Pakistani Punjabi, a 55-point gap.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062b20"/>
+      <stop offset="0.55" stop-color="#0b4a35"/>
+      <stop offset="1" stop-color="#0f5c41"/>
+    </linearGradient>
+    <linearGradient id="urdu" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee2b8"/>
+      <stop offset="1" stop-color="#c6f7e2"/>
+    </linearGradient>
+    <linearGradient id="pun" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9f43"/>
+      <stop offset="1" stop-color="#ffc58a"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="430" rx="22"/></clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .ur { font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif; }
+    .float { animation: drift 9s ease-in-out infinite; }
+    .f2 { animation-duration: 11s; animation-delay: -3s; }
+    .f3 { animation-duration: 13s; animation-delay: -6s; }
+    .f4 { animation-duration: 10s; animation-delay: -1.5s; }
+    @keyframes drift {
+      0%, 100% { transform: translateY(0); opacity: 0.10; }
+      50% { transform: translateY(-14px); opacity: 0.22; }
+    }
+    .in { animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.35s; } .d3 { animation-delay: 0.6s; }
+    .d4 { animation-delay: 0.9s; } .d5 { animation-delay: 2.6s; } .d6 { animation-delay: 3.0s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.6s cubic-bezier(.2,.8,.2,1) both; }
+    .b1 { animation-delay: 1.0s; } .b2 { animation-delay: 1.4s; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-in-out 3.2s infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="430" fill="url(#bg)"/>
+    <rect width="1200" height="430" fill="url(#dots)"/>
+    <circle cx="1120" cy="-40" r="230" fill="#ffffff" fill-opacity="0.04"/>
+    <circle cx="80" cy="470" r="180" fill="#ffffff" fill-opacity="0.03"/>
+
+    <!-- floating Pakistani Punjabi words from the test set -->
+    <g class="ur" fill="#ffffff" font-size="34" text-anchor="middle">
+      <text x="960" y="78" class="float">منجی</text>
+      <text x="1110" y="150" class="float f2">جندرا</text>
+      <text x="820" y="128" class="float f3">پینگھ</text>
+      <text x="1080" y="398" class="float f4">کھوہ</text>
+      <text x="640" y="54" class="float f2">بھاگوان</text>
+      <text x="560" y="404" class="float f3">ہندوانہ</text>
+    </g>
+
+    <!-- left: title block -->
+    <g class="sans">
+      <g class="in d1">
+        <rect x="60" y="54" width="208" height="30" rx="15" fill="#ffffff" fill-opacity="0.12"/>
+        <text x="164" y="74" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="2.2" fill="#c6f7e2">AI BLIND SPOT STUDY</text>
+      </g>
+      <g class="in d2" fill="#ffffff" font-weight="800">
+        <text x="60" y="140" font-size="46">Everyday Pakistani</text>
+        <text x="60" y="194" font-size="46">Punjabi Words</text>
+      </g>
+      <text x="60" y="236" class="in d3" font-size="19" fill="#d7efe4">Can a 2026 multilingual model understand the words</text>
+      <text x="60" y="262" class="in d3" font-size="19" fill="#d7efe4">we use at home? Same 40 things, asked in Punjabi and Urdu.</text>
+      <g class="in d4">
+        <rect x="60" y="292" width="262" height="32" rx="8" fill="#000000" fill-opacity="0.22"/>
+        <text x="74" y="313" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="15" fill="#ffffff">google/gemma-4-E2B-it</text>
+      </g>
+      <text x="60" y="380" class="in d4" font-size="15" fill="#a9d6c3">Muhammad Ramzan  ·  Fatima Fellowship Fall 2026</text>
+    </g>
+
+    <!-- right: results panel -->
+    <g class="sans">
+      <rect x="640" y="168" width="500" height="206" rx="18" fill="#000000" fill-opacity="0.24"/>
+      <text x="668" y="204" font-size="14" font-weight="700" letter-spacing="1.6" fill="#a9d6c3">AVERAGE SCORE (40 WORDS EACH)</text>
+
+      <text x="668" y="244" font-size="17" font-weight="700" fill="#ffffff">Urdu</text>
+      <rect x="760" y="228" width="300" height="22" rx="11" fill="#ffffff" fill-opacity="0.10"/>
+      <rect x="760" y="228" width="221.25" height="22" rx="11" fill="url(#urdu)" class="bar b1"/>
+      <text x="1112" y="245" text-anchor="end" font-size="18" font-weight="800" fill="#c6f7e2" class="in d5">73.75%</text>
+
+      <text x="668" y="292" font-size="17" font-weight="700" fill="#ffffff">Punjabi</text>
+      <rect x="760" y="276" width="300" height="22" rx="11" fill="#ffffff" fill-opacity="0.10"/>
+      <rect x="760" y="276" width="56.25" height="22" rx="11" fill="url(#pun)" class="bar b2"/>
+      <text x="1112" y="293" text-anchor="end" font-size="18" font-weight="800" fill="#ffc58a" class="in d5">18.75%</text>
+
+      <g class="in d6">
+        <g class="pulse">
+          <rect x="668" y="322" width="186" height="34" rx="17" fill="#ff9f43"/>
+          <text x="761" y="345" text-anchor="middle" font-size="16" font-weight="800" fill="#2b1500">55-point gap</text>
+        </g>
+        <text x="870" y="344" font-size="15" fill="#d7efe4">same meaning, different language</text>
+      </g>
+    </g>
+  </g>
+</svg>

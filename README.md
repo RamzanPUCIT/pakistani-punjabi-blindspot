@@ -1,6 +1,17 @@
+<p align="center">
+  <img src="banner.svg" alt="Blind Spot: Everyday Pakistani Punjabi Words. Urdu 73.75%, Punjabi 18.75%, a 55-point gap." width="100%">
+</p>
+
 # Blind Spot: Everyday Pakistani Punjabi Words
 
 Muhammad Ramzan — Fatima Fellowship Fall 2026, Technical Challenge
+
+<p align="center">
+  <a href="https://huggingface.co/google/gemma-4-E2B-it"><img src="https://img.shields.io/badge/Model-gemma--4--E2B--it-4285F4?logo=google&logoColor=white" alt="Model"></a>
+  <a href="https://huggingface.co/buckets/RamzanPUCIT/punjabi-blindspot"><img src="https://img.shields.io/badge/Hugging%20Face-Bucket-FFD21E?logo=huggingface&logoColor=black" alt="Hugging Face bucket"></a>
+  <a href="punjabi_blindspot_eval.ipynb"><img src="https://img.shields.io/badge/Notebook-Colab%20T4-F9AB00?logo=googlecolab&logoColor=white" alt="Notebook"></a>
+  <img src="https://img.shields.io/badge/Words%20tested-40-0b4a35" alt="40 words">
+</p>
 
 ## 1. The blind spot
 
@@ -51,8 +62,9 @@ I think we need a big dataset of Pakistani Punjabi, written in Shahmukhi. We can
 
 The model also made some mistakes in Urdu, so it is not perfect in Urdu either. But it is much weaker in Punjabi than in Urdu. Some of my Urdu entries are phrases, not single words. This test has only 40 words and one model, and I scored all the answers myself.
 
-## Files in this bucket
+## Files in this repository
 
 - `README.md` — this file
+- `banner.svg` — the animated card at the top
 - `results_scored.csv` — the 80 questions, model answers, and my scores and notes
 - `punjabi_blindspot_eval.ipynb` — the Colab notebook I ran
